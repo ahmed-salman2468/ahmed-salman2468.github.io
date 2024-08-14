@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+<!--  <base href="/">-->
+  <base href="./">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SA-Portfolio">
+  <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
+
+  <!-- Favicon -->
+  <link rel="icon" sizes="any" href="./favicon.ico">
+  <!-- Style.css -->
+  <link rel="stylesheet" href="./style.css">
+
+  <title>SA-Portfolio-App</title>
+  <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+  <div class="hexagon-container">
+    <svg viewBox="0 0 100 100" class="hexagon">
+      <polygon points="50,1 93,25 93,75 50,99 7,75 7,25" class="hexagon-outline"></polygon>
+    </svg>
+    <div class="center-letter">S</div>
+  </div>
+<!--  <script src="flutter_bootstrap.js" async></script>-->
+  <script>
+    // Function to hide the splash screen and initialize Flutter
+    function startFlutterApp() {
+      const splash = document.querySelector('.hexagon-container');
+      if (splash) {
+        splash.style.opacity = 0;
+        splash.style.display = 'none';
+      }
+    }
+    // Add a delay before hiding the splash screen and starting the Flutter app
+    document.addEventListener('DOMContentLoaded', (event) => {
+      setTimeout(startFlutterApp, 4000);
+      setTimeout(()=> {
+        var script = document.createElement('script');
+        script.src = 'flutter_bootstrap.js';
+        document.body.appendChild(script);
+      }, 2800);
+    });
+  </script>
+</body>
+</html>
