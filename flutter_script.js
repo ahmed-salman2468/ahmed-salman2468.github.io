@@ -12,5 +12,5 @@ document.addEventListener('DOMContentLoaded', (event) => {
     var script = document.createElement('script');
     script.src = './flutter_bootstrap.js';
     document.body.appendChild(script);
-  }, 2800);
+  }, 3000);
 });
