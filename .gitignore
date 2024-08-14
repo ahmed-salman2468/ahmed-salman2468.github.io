@@ -39,7 +39,6 @@ web/assets/AssetManifest.bin
 .vscode/tasks.json
 
 # Generated files for Dart
-*.dart.js
 *.info.json
 *.js.deps
 *.js.map
