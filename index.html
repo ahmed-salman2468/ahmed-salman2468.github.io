@@ -43,25 +43,6 @@
     </svg>
     <div class="center-letter">S</div>
   </div>
-<!--  <script src="flutter_bootstrap.js" async></script>-->
-  <script>
-    // Function to hide the splash screen and initialize Flutter
-    function startFlutterApp() {
-      const splash = document.querySelector('.hexagon-container');
-      if (splash) {
-        splash.style.opacity = 0;
-        splash.style.display = 'none';
-      }
-    }
-    // Add a delay before hiding the splash screen and starting the Flutter app
-    document.addEventListener('DOMContentLoaded', (event) => {
-      setTimeout(startFlutterApp, 4000);
-      setTimeout(()=> {
-        var script = document.createElement('script');
-        script.src = './flutter_bootstrap.js';
-        document.body.appendChild(script);
-      }, 2000);
-    });
-  </script>
+  <script src="./flutter_script.js"></script>
 </body>
 </html>
