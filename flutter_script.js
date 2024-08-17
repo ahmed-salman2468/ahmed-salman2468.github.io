@@ -5,7 +5,7 @@ function startFlutterApp() {
     splash.style.display = 'none';
   }
 }
-// Add a delay before hiding the splash screen and starting the Flutter app
+
 document.addEventListener('DOMContentLoaded', (event) => {
   setTimeout(startFlutterApp, 4000);
   setTimeout(()=> {
