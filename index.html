@@ -35,6 +35,11 @@
 
   <title>SA-Portfolio-App</title>
   <link rel="manifest" href="./manifest.json">
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/flutter_service_worker.js');
+    }
+  </script>
 </head>
 <body>
   <div class="hexagon-container">
